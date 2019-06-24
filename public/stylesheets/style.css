@@ -2,7 +2,41 @@ body {
   padding: 0;
   margin: 0;
   font-family: Roboto;
+  background-color:#DDD
 }
+
+/*--------------------------------------------------------------
+# Social
+--------------------------------------------------------------*/
+#social {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 30px;
+  z-index: 3;
+}
+
+#social ul {
+  list-style-type: none;
+}
+
+#social li {
+  padding: 5px;
+  transition: .5s;
+}
+
+#social li:hover {
+  color: black;
+}
+
+#social .fa {
+  color: white;
+}
+
+
+/*--------------------------------------------------------------
+# NAV
+--------------------------------------------------------------*/
 
 
 .nav {
@@ -11,7 +45,15 @@ body {
   margin: 0;
   height: 10vh;
   width: 100vw;
+  background-color: red;
+  display: none;
+  transition-duration: 1s;
 }
+
+
+/*--------------------------------------------------------------
+# INTRO
+--------------------------------------------------------------*/
 
 .intro {
   background-color: #282D44;
@@ -55,6 +97,18 @@ body {
   text-align: end;
 }
 
+.passion-title {
+  margin-top: 1em;
+  color: rgba(201, 201, 201, 0.612);
+}
+
+.info-passion a {
+  padding: .2em;
+  text-decoration: none;
+  font-size: .8em;
+  color: rgb(91, 97, 125);
+}
+
 .info-links {
   display: flex;
   flex-direction: column;
@@ -72,5 +126,141 @@ body {
 }
 
 .info-links a:hover {
-  color: white;
+  color: rgba(201, 201, 201, 0.612);
+}
+
+
+/*--------------------------------------------------------------
+# Project Cards
+--------------------------------------------------------------*/
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50em;
+  height: 30em;
+}
+
+.img {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  height: 20em;
+  width: 30em;
+  object-fit: cover;
+  object-position: 0 0;
+  filter: grayscale(100%);
+  transition-duration: .5s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img:hover {
+  filter: grayscale(0%);
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  width: 50%;
+}
+
+.title {
+  padding: 0 1em;
+  font-size: 1.8em;
+  text-align: end;
+  color: #172A44;
+}
+
+.desc {
+  padding: 1.5em;
+  color: #A7B1D0;
+  background-color: #172A44;
+  text-align: end;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.icon-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+  filter: grayscale(100%);
+  margin: .3em;
+  height: 3em;
+}
+
+.icon:hover {
+  filter: grayscale(0%);
+}
+
+.card-switch {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  width: 50em;
+  height: 30em;
+}
+
+.img-switch {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  height: 20em;
+  width: 30em;
+  filter: grayscale(100%);
+  transition-duration: .5s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-switch:hover {
+  filter: grayscale(0%);
+}
+
+.card-info-switch {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  width: 50%;
+}
+
+.title-switch {
+  padding: 0 1em;
+  font-size: 1.8em;
+  color: #172A44;
+}
+
+.desc-switch {
+  padding: 1.5em;
+  color: #A7B1D0;
+  background-color: #172A44;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.icon-wrapper-switch {
+  width: 100%;
+  display: flex;
+}
+
+.icon-switch {
+  filter: grayscale(100%);
+  margin: .3em;
+  height: 3em;
+}
+
+.icon-switch:hover {
+  filter: grayscale(0%);
 }

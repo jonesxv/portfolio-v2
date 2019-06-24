@@ -1,22 +1,62 @@
 extends layout
 
 block content
+  #social
+    ul
+      li
+        a(href="https://github.com/jonesxv", target="blank")
+          i.fab.fa-2x.fa-github
+      li
+        a(href="https://linkedin.com/in/ryan-jones-0b1b6a8b", target="blank")
+          i.fab.fa-2x.fa-linkedin
+      li
+        a(href="https://twitter.com/rynojones", target="blank")
+          i.fab.fa-2x.fa-twitter
+      li
+        a(href="https://www.instagram.com/ryjxv/", target="blank")
+          i.fab.fa-2x.fa-instagram
+      li
+        a(href="https://codepen.io/jonesxv", target="blank")
+          i.fab.fa-2x.fa-codepen
   div.intro
     div.info
       .info-intro
         div.info-name Ryan Jones
-        div.info-title Full Stack Developer
-        div.info-bio Hello! My name is Ryan. I am a Full Stack Developer from Phoenix, AZ. 
+        div.info-bio Hello! My name is Ryan. I am a Full Stack Web Developer. Inspired by the world around me, I seek to learn so I can create meaningful solutions.
         .passion-title Passion Projects
         .info-passion
-          a(href="#home") Home
-          a(href="#home") About
-          a(href="#home") Projects
-          a(href="#home") Contact
+          a(href="#home") Art
+          a(href="#home") Design
+          a(href="#home") Photography
       .info-links
-        a(href="#home") Home
-        a(href="#home") About
-        a(href="#home") Projects
-        a(href="#home") Contact
-  .skills Skills
-  .projects Project
+        a(href="#projects") Projects
+        a(href="#skills") Skills
+        a(href="#about") About
+        a(href="#contact") Contact
+  .skills#skills Skills
+
+  .projects#projects
+    div.card-wrapper
+      div.card
+        div.img
+          img.img(src="/images/dashScreenshot.png", alt="image")
+        div.card-info
+          span.title Skill Test
+          p.desc A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more. 
+          div.icon-wrapper
+            img.icon(src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png", alt="firebase")
+            img.icon(src="https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png", alt="firebase")
+            img.icon(src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/220px-Postgresql_elephant.svg.png", alt="firebase")
+            img.icon(src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png", alt="firebase")
+      
+      div.card-switch
+        div.img-switch
+          img.img-switch(src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge_wm_brw/public/article_images/2017/10/google-pixel-2-screenshot.jpg?itok=tIGwuzgb", alt="image")
+        div.card-info-switch
+          span.title-switch Recipe Finder
+          p.desc-switch A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more. 
+          div.icon-wrapper-switch
+            img.icon-switch(src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png", alt="firebase")
+            img.icon-switch(src="https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png", alt="firebase")
+            img.icon-switch(src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/220px-Postgresql_elephant.svg.png", alt="firebase")
+            img.icon-switch(src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png", alt="firebase")

@@ -58,6 +58,7 @@ body {
 .nav i {
   margin: 1em;
   align-self: flex-end;
+  color: rgba(40, 45, 68);
 }
 
 .nav #nav-links {
@@ -116,8 +117,13 @@ body {
 
 .info-name {
   font-size: 3em;
+  padding: 0;
+  margin-top: -.4em;
 }
 
+.highlight {
+  color: rgb(66, 119, 193);
+}
 .info-bio {
   text-align: end;
 }
@@ -132,6 +138,10 @@ body {
   text-decoration: none;
   font-size: .8em;
   color: rgb(91, 97, 125);
+}
+
+.info-passion a:hover {
+  color: rgb(66, 119, 193);
 }
 
 .info-links {
@@ -152,7 +162,7 @@ body {
 }
 
 .info-links a:hover {
-  color: rgba(201, 201, 201, 0.612);
+  color: rgb(66, 119, 193);
 }
 
 /*--------------------------------------------------------------
@@ -250,6 +260,7 @@ body {
 
 .title {
   margin: 0 1em;
+  font-weight: bold;
   text-align: end;
   color: #172A44;
 }
@@ -269,9 +280,10 @@ body {
 }
 
 .desc {
-  padding: 1.5em;
-  color: #A7B1D0;
-  background-color: #172A44;
+  padding: 1em;
+  color: rgb(222, 222, 222);
+  /* background-color: rgba(9, 25, 48, 0.687); */
+  background-color: rgba(66, 119, 193, 0.762);
   text-align: end;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -332,8 +344,15 @@ body {
   width: 60%;
 }
 
+.title-switch {
+  margin: 0 1em;
+  font-weight: bold;
+  color: #172A44;
+}
+
 .title-switch a {
   margin: 0 .4em;
+  font-weight: bold;
   font-size: .8em;
 }
 
@@ -344,10 +363,7 @@ body {
 
 
 .desc-switch {
-  padding: 1.5em;
-  color: #A7B1D0;
-  background-color: #172A44;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  text-align: start;
 }
 
 .icon-wrapper-switch {
@@ -387,4 +403,41 @@ body {
 
 .about-info p {
   text-align: center;
+  font-size: 1.5em;
+}
+
+
+.exp-title {
+  text-align: center;
+  transition-duration: 1s;
+  width: 100%;
+}
+
+#exp {
+  padding: 0 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exp-info {
+  width: 50em;
+}
+
+.exp-item {
+  padding: 1em 0;
+}
+
+.exp-line {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.company {
+  font-size: 2em;
+}
+
+.date {
+  font-size: 1.5em;
 }

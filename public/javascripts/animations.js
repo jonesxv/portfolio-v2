@@ -6,15 +6,8 @@ $(window).on("scroll", function(e){
   var proj = $('#projects').offset().top
   var opac = 1 - ($(window).scrollTop() / proj)
   $('.intro').css({'background-color': `rgba(40, 45, 68, ${opac})`})
-  if ($(window).scrollTop() > proj) {
-    
-    $('.nav').fadeIn('fast', function() {
-      // Animation complete
-    });
-  } else {
-    $('.nav').fadeOut('fast', function() {
-      // Animation complete
-    });
+  if ($(window).scrollTop() < proj) {
+    $('nav #nav-links').toggleClass('show hidden')
   }
 })
 
@@ -23,7 +16,6 @@ var scroll = window.requestAnimationFrame ||
     window.setTimeout(callback
       , 1000/60)}
 var show = document.querySelectorAll('.scroll-animate');
-console.log(show)
 function loop() {
   show.forEach(el => {
     if (isElementInViewport(el)) {

@@ -21,21 +21,29 @@ block content
   div.intro
     div.info.scroll-animate.animate-down
       .info-intro
-        div.info-name Ryan Jones
-        div.info-bio Hello! My name is Ryan. I am a Full Stack Web Developer.
+        .info-name Hello!
+        div.info-name I'm Ryan Jones
+        .info-bio 
+          span.highlight technologist
+          span  | 
+          span.highlight creative
+          span  | 
+          span.highlight Full Stack Web Developer
+        .info-bio I solve problems and develop strong solutions
+        .info-bio I explore new ideas through painting, design, and photo
         .passion-title Passion Projects
         .info-passion
           a(href="#home") Art
-          a(href="https://www.behance.net/jonesxv") Design
-          a(href="#home") Photography
+          a(href="https://www.behance.net/jonesxv" target="blank") Design
+          a(href="https://www.instagram.com/ryjxv" target="blank") Photography
       .info-links.scroll-animate.animate-up
         a(href="#projects") Projects
-        a(href="#skills") Skills
+        a(href="#exp") Experience
         a(href="#about") About
         a(href="#contact") Contact
   .projects#projects
     .projects-title
-      h1.scroll-animate.animate-up Projects
+      h1 Development Projects
       hr
     div.card-wrapper
       div.card
@@ -64,14 +72,54 @@ block content
               i.fab.fa-2x.fa-github
             a(href="http://clean-side.surge.sh", target="blank")
               i.fas.fa-2x.fa-external-link-alt
-          p.desc-switch A web application to search the Spoonacular API for recipes containing ingredients input into search. Users can create an account and login to save recipes found in search. User recipes stored in Firestore.
+          p.desc.desc-switch A web application to search the Spoonacular API for recipes containing ingredients input into search. Users can create an account and login to save recipes found in search. User recipes stored in Firestore.
           div.icon-wrapper-switch
             img.icon-switch(src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1280px-Firebase_Logo.svg.png", alt="Firebase")
             img.icon-switch(src="https://cdn-images-1.medium.com/max/1200/1*qqOrP7lca1XW70IzPg9Mmw.png", alt="Surge")
             img.icon-switch(src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/JQuery-Logo.svg/1280px-JQuery-Logo.svg.png", alt="jQuery")
+      div.card.scroll-animate
+        div.img.scroll-animate.animate-right
+          img.img-switch(src="/images/youtube.png", alt="image")
+        div.card-info.scroll-animate.animate-left
+          .title
+            a(href="https://github.com/jonesxv/youtube-app", target="blank")
+              i.fab.fa-2x.fa-github
+            a(href="#", target="blank")
+              i.fas.fa-2x.fa-external-link-alt
+            span YouTube Playlist
+          p.desc.desc-switch A web application to search the YouTube API for keywords and save videos within a playlist. Users will see the top videos for 5 preset categories on the home page and each video an add button to add to the global playlist.
+          div.icon-wrapper
+            img.icon(src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1280px-Firebase_Logo.svg.png", alt="Firebase")
+            img.icon(src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/JQuery-Logo.svg/1280px-JQuery-Logo.svg.png", alt="jQuery")      
+  .exp#exp.scroll-animate.animate-up
+    .exp-title
+      h1 Professional Experience
+      hr
+    .exp-info
+      .exp-item
+        .exp-line
+          span.company Galvanize Software Engineering
+          span.date Apr 2019 to Present
+        .exp-line
+          span.job-title Tech Scholar Student
+        ul
+      .exp-item
+        .exp-line
+          span.company Wells Fargo
+          span.date Dec 2017 to Apr 2019
+        .exp-line
+          span.job-title Systems Support Analyst
+        ul
+      .exp-item
+        .exp-line
+          span.company United States Air Force
+          span.date Aug 2009 to Aug 2018
+        .exp-line
+          span.job-title Network Technician
+        ul
   .about#about.scroll-animate.animate-up
     .about-title
-      h1 About
+      h1 About Me
       hr
     .about-info
-      p Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure.
+      p Hi, my name is Ryan. I am a Full Stack Developer but I wouldn't describe myself as only that. I have also studied art, served time in the US Air Force, and enjoy competitive sports. My unique background has taken me to where I am and my journey has just begun. I have a passion for learning new technologies and I'm excited for my next opportunites.

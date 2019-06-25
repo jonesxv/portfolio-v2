@@ -384,3 +384,7 @@ body {
 .about-info {
   width: 60em;
 }
+
+.about-info p {
+  text-align: center;
+}

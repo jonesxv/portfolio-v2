@@ -1,3 +1,7 @@
+$('nav i').on('click', function() {
+  $('nav #nav-links').toggleClass('show hidden')
+})
+
 $(window).on("scroll", function(e){
   var proj = $('#projects').offset().top
   var opac = 1 - ($(window).scrollTop() / proj)

@@ -46,14 +46,32 @@ body {
 
 
 .nav {
+  display: flex;
+  flex-direction: column;
   position: fixed;
-  z-index: 99;
-  margin: 0;
-  height: 10vh;
-  width: 10vw;
-  background-color: red;
-  display: none;
-  transition-duration: 1s;
+  top: 0;
+  right: 0;
+  margin-bottom: 30px;
+  z-index: 3;
+}
+
+.nav i {
+  margin: 1em;
+  align-self: flex-end;
+}
+
+.nav #nav-links {
+  opacity: 0;
+  align-items: flex-end;
+  transition: opacity 1s ease-in-out;
+}
+
+#nav-links a {
+  text-align: end;
+}
+
+.show {
+  opacity: 1 !important;
 }
 
 
@@ -130,13 +148,16 @@ body {
   text-decoration: none;
   color: white;
   margin: .2em;
+  transition: font-size .5s ease;
 }
 
 .info-links a:hover {
   color: rgba(201, 201, 201, 0.612);
 }
 
-
+/*--------------------------------------------------------------
+# ANIMATION
+--------------------------------------------------------------*/
 .scroll-animate {
   opacity: 0;
 }
@@ -171,7 +192,7 @@ body {
 }
 
 /*--------------------------------------------------------------
-# Project Cards
+# Project Cards (RIGHT SET)
 --------------------------------------------------------------*/
 
 .projects-title {
@@ -272,6 +293,10 @@ body {
 
 }
 
+/*--------------------------------------------------------------
+# PROJECT CARDS (LEFT SET/SWITCH)
+--------------------------------------------------------------*/
+
 .card-switch {
   position: relative;
   z-index: 0;
@@ -339,4 +364,23 @@ body {
 
 .icon-switch:hover {
   filter: grayscale(0%);
+}
+
+
+
+.about-title {
+  text-align: center;
+  transition-duration: 1s;
+  width: 100%;
+}
+
+#about {
+  padding: 0 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-info {
+  width: 60em;
 }

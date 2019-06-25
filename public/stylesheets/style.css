@@ -101,7 +101,7 @@ body {
 .info {
   width: 90vw;
   height: 90vh;
-  color: white;
+  color: #DDD;
   display: flex;
 }
 
@@ -118,7 +118,7 @@ body {
 .info-name {
   font-size: 3em;
   padding: 0;
-  margin-top: -.4em;
+  text-align: end;
 }
 
 .highlight {
@@ -130,18 +130,27 @@ body {
 
 .passion-title {
   margin-top: 1em;
-  color: rgba(201, 201, 201, 0.612);
+  color: rgba(66, 119, 193, 0.653);
 }
 
 .info-passion a {
   padding: .2em;
   text-decoration: none;
   font-size: .8em;
-  color: rgb(91, 97, 125);
+  color: #DDD;
 }
 
 .info-passion a:hover {
   color: rgb(66, 119, 193);
+}
+
+.border-left {
+  border-left: 3px solid #DDD;
+  height: 50%;
+  flex: 1;
+  align-self: center;
+  display: flex;
+  align-items: center;
 }
 
 .info-links {
@@ -149,14 +158,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  flex: 1;
   padding-left: 1em;
   font-size: 3em;
+  
 }
 
 .info-links a {
   text-decoration: none;
-  color: white;
+  color: #DDD;
   margin: .2em;
   transition: font-size .5s ease;
 }

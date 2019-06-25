@@ -4,7 +4,7 @@ $('nav i').on('click', function() {
 
 $(window).on("scroll", function(e){
   var proj = $('#projects').offset().top
-  var opac = 1 - ($(window).scrollTop() / proj)
+  var opac = 1 - ($(window).scrollTop() / (proj - 200))
   $('.intro').css({'background-color': `rgba(40, 45, 68, ${opac})`})
   if ($(window).scrollTop() < proj) {
     $('nav #nav-links').toggleClass('show hidden')

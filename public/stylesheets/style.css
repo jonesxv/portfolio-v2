@@ -145,7 +145,6 @@ body {
 }
 
 .border-left {
-  border-left: 3px solid #DDD;
   height: 50%;
   flex: 1;
   align-self: center;

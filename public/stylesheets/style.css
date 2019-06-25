@@ -228,10 +228,23 @@ body {
 }
 
 .title {
-  padding: 0 1em;
-  font-size: 1.8em;
+  margin: 0 1em;
   text-align: end;
   color: #172A44;
+}
+
+.fab, .fas {
+  color: rgb(160, 160, 160);
+}
+
+.title a {
+  margin: 0 .4em;
+  font-size: .8em;
+}
+
+.title span {
+  margin-left: 1em;
+  font-size: 2em;
 }
 
 .desc {
@@ -294,11 +307,16 @@ body {
   width: 60%;
 }
 
-.title-switch {
-  padding: 0 1em;
-  font-size: 1.8em;
-  color: #172A44;
+.title-switch a {
+  margin: 0 .4em;
+  font-size: .8em;
 }
+
+.title-switch span {
+  margin-right: 1em;
+  font-size: 2em;
+}
+
 
 .desc-switch {
   padding: 1.5em;

@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  #social
+  #social.scroll-animate.animate-up
     ul
       li
         a(href="https://github.com/jonesxv", target="blank")
@@ -19,44 +19,44 @@ block content
         a(href="https://codepen.io/jonesxv", target="blank")
           i.fab.fa-2x.fa-codepen
   div.intro
-    div.info
+    div.info.scroll-animate.animate-down
       .info-intro
         div.info-name Ryan Jones
         div.info-bio Hello! My name is Ryan. I am a Full Stack Web Developer. Inspired by the world around me, I seek to learn so I can create meaningful solutions.
         .passion-title Passion Projects
         .info-passion
           a(href="#home") Art
-          a(href="#home") Design
+          a(href="https://www.behance.net/jonesxv") Design
           a(href="#home") Photography
-      .info-links
+      .info-links.scroll-animate.animate-up
         a(href="#projects") Projects
         a(href="#skills") Skills
         a(href="#about") About
         a(href="#contact") Contact
-  .skills#skills Skills
-
   .projects#projects
+    .projects-title
+      h1.scroll-animate.animate-up Projects
+      hr
     div.card-wrapper
       div.card
-        div.img
+        div.img.scroll-animate.animate-right
           img.img(src="/images/dashScreenshot.png", alt="image")
-        div.card-info
+        div.card-info.scroll-animate.animate-left
           span.title Skill Test
-          p.desc A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more. 
+          p.desc A Human Resources management web application for technical recruiters. Recruiter sign up and login to manage technical prospects. Create technical tests and assign to potential prospects. Test takers can take created test with test code and their email. Dashboard shows completed tests and compares all test scores to identify best prospects.
           div.icon-wrapper
             img.icon(src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png", alt="firebase")
             img.icon(src="https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png", alt="firebase")
             img.icon(src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/220px-Postgresql_elephant.svg.png", alt="firebase")
             img.icon(src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png", alt="firebase")
       
-      div.card-switch
-        div.img-switch
-          img.img-switch(src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge_wm_brw/public/article_images/2017/10/google-pixel-2-screenshot.jpg?itok=tIGwuzgb", alt="image")
-        div.card-info-switch
+      div.card-switch.scroll-animate
+        div.img-switch.scroll-animate.animate-left
+          img.img-switch(src="/images/recipefinder.png", alt="image")
+        div.card-info-switch.scroll-animate.animate-right
           span.title-switch Recipe Finder
-          p.desc-switch A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more. 
+          p.desc-switch A web application to search the Spoonacular API for recipes containing ingredients input into search. Users can create an account and login to save recipes found in search. User recipes stored in Firestore.
           div.icon-wrapper-switch
             img.icon-switch(src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png", alt="firebase")
             img.icon-switch(src="https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png", alt="firebase")
-            img.icon-switch(src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/220px-Postgresql_elephant.svg.png", alt="firebase")
             img.icon-switch(src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png", alt="firebase")

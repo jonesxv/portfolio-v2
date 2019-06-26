@@ -43,6 +43,19 @@ body {
               opacity .3s .25s ease-out;
 }
 
+@media only screen and (max-width: 1060px) {
+  #social {
+    width: 100%;
+  }
+  
+  #social ul {
+    padding: 0;
+    display: inline-flex;
+    font-size: 3em;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
 
 /*--------------------------------------------------------------
 # NAV

@@ -9,6 +9,17 @@ body {
   background-color:#DDD
 }
 
+/* FOOTER */
+
+.footer {
+  padding: 1.5em 0;
+  font-size: 1.2em;
+  width: 100%;
+  background-color: #282D44;
+  color: #DDD;
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 # Social
 --------------------------------------------------------------*/
@@ -100,7 +111,6 @@ body {
 
 .intro {
   background-color: #282D44;
-  background-color: rgba(40, 45, 68);
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -432,6 +442,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 4em 0;
 }
 
 .about-info {
@@ -559,7 +570,7 @@ body {
   }
   
   .card, .card-switch {
-    margin-top: 4em;
+    margin-bottom: 4em;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column-reverse;

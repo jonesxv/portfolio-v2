@@ -122,6 +122,15 @@ body {
   margin: 0 auto;
 }
 
+.portrait {
+  height: 12em;
+  width: 15em;
+  object-fit: cover;
+  filter: grayscale(60%);
+  transition: filter 1s ease;
+}
+
+
 .info {
   width: 90vw;
   height: 90vh;
@@ -204,12 +213,13 @@ body {
 .info-links a {
   text-decoration: none;
   color: #DDD;
-  margin: .2em;
-  transition: font-size .5s ease;
+  padding: .2em;
+  transition-duration: 1s;
 }
 
 .info-links a:hover {
   color: rgb(66, 119, 193);
+  border-left: solid 2px rgba(221, 221, 221, 0);
 }
 
 /*--------------------------------------------------------------
@@ -505,9 +515,6 @@ body {
     display: block;
   }
 
-  .info-name {
-    display: none;
-  }
   .highlight {
     font-size: 1.5em;
   }

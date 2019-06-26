@@ -35,6 +35,7 @@ body {
 
 #social .fa-2x {
   color: rgb(66, 119, 193);
+  text-shadow: .1em .1em .2em #2726344d;
 }
 
 #social .fa-2x:hover {
@@ -47,7 +48,7 @@ body {
   #social {
     width: 100%;
   }
-  
+
   #social ul {
     padding: 0;
     display: inline-flex;
@@ -487,6 +488,10 @@ body {
     left: auto;
     width: 100%;
   }
+
+  .img:hover, .img-switch:hover {
+    height: 30em;
+  }
   
   .card, .card-switch {
     margin-top: 4em;
@@ -534,5 +539,10 @@ body {
   .icon-wrapper, .icon-wrapper-switch {
     justify-content: center;
     background-color: rgba(66, 119, 193, 0.762);
+    padding: 1em 0;
+  }
+
+  .icon, .icon-switch {
+    filter: grayscale(0%);
   }
 }

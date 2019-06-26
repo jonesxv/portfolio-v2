@@ -135,6 +135,20 @@ body {
   text-align: end;
 }
 
+.info-name-mobile {
+  display: none;
+  font-size: 4em;
+  padding: 0;
+  text-align: end;
+}
+
+.info-name-mobile-hi {
+  display: none;
+  font-size: 6em;
+  padding: 0;
+  text-align: end;
+}
+
 .highlight {
   color: rgb(66, 119, 193);
 }
@@ -152,6 +166,7 @@ body {
   text-decoration: none;
   font-size: .8em;
   color: #DDD;
+  text-align: end;
 }
 
 .info-passion a:hover {
@@ -469,6 +484,50 @@ body {
 /* MOBILE */
 
 @media only screen and (max-width: 1060px) {
+
+
+  .info-name-mobile {
+    display: block;
+  }
+
+  .info-name-mobile-hi {
+    display: block;
+  }
+
+  .info-name {
+    display: none;
+  }
+  .highlight {
+    font-size: 1.5em;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .info-bio, .info-passion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-links {
+    padding: 0;
+    font-size: 4em;
+  }
+
+  .passion-title {
+    font-size: 1.2em;
+  }
+
+  .info-passion a {
+    font-size: 1.2em;
+    padding: none;
+  }  
+
+  .info-bio-desktop {
+    display: none;
+  }
+
   .animate-left, .animate-right {
     transform: translateY(3em);
   }

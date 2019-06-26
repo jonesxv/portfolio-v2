@@ -1,3 +1,7 @@
+html {
+  width: 100%;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -88,11 +92,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: distribute;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -193,13 +193,13 @@ body {
 }
 
 .animate-right {
-  transform: translate(-4em);
+  transform: translate(-3em);
   transition: transform 4s .25s cubic-bezier(0,1,.3,1),
               opacity .3s .25s ease-out;
 }
 
 .animate-left {
-  transform: translate(4em);
+  transform: translate(3em);
   transition: transform 4s .25s cubic-bezier(0,1,.3,1),
               opacity .3s .25s ease-out;
 }
@@ -448,4 +448,78 @@ body {
 
 .date {
   font-size: 1.5em;
+}
+
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 1060px) {
+  .animate-left, .animate-right {
+    transform: translateY(3em);
+  }
+
+  #projects {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+  .img, .img-switch {
+    position: static;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 100%;
+  }
+  
+  .card, .card-switch {
+    margin-top: 4em;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-info, .card-info-switch {
+    width: 100%;
+  }
+  
+  .title, .title-switch {
+    font-size: 2em;
+    text-align: start;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+
+  .title span, .title-switch span {
+    margin: 0 1em;
+    flex: 7;
+  }
+
+  .title a, .title-switch a {
+    flex: 1;
+  }
+
+  .title-switch {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .desc, .desc-switch {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0), 0 6px 10px 0 rgba(0, 0, 0, 0);
+  }
+
+  .icon-wrapper, .icon-wrapper-switch {
+    justify-content: center;
+    background-color: rgba(66, 119, 193, 0.762);
+  }
 }

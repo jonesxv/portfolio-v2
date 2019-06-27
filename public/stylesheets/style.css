@@ -506,7 +506,17 @@ body {
 
 @media only screen and (max-width: 1060px) {
 
+  #social {
+    margin: 0;
+  }
 
+  .portrait {
+    width: 100%;
+    height: 100%;
+    max-height: 28em;
+    object-position: 0 -5em;
+    flex: 5;
+  }
   .info-name-mobile {
     display: block;
   }
@@ -523,18 +533,56 @@ body {
     display: none;
   }
 
+  .info {
+    flex-direction: column-reverse;
+    padding-bottom: 10em;
+  }
+
+  .info-intro {
+    padding: 0;
+    text-align: center;
+    flex: 10;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .info-name {
+    font-size: 5em;
+    flex: 1;
+  }
+
   .info-bio, .info-passion {
     display: flex;
     flex-direction: column;
+    flex: 2;
+    font-size: 1.3em;
+  }
+
+  .info-passion {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    flex: 1;
+  }
+
+  .info-bio {
+    text-align: center;
   }
 
   .info-links {
+    flex: 1;
     padding: 0;
-    font-size: 4em;
+    font-size: 3em;
+    flex-direction: row;
+  }
+
+  .info-links a {
+    padding: .5em;
   }
 
   .passion-title {
     font-size: 1.2em;
+    display:none;
   }
 
   .info-passion a {
